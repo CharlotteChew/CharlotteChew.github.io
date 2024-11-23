@@ -10,17 +10,29 @@
     <meta name="copyright" content="Charlotte Chew">
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     <meta name="description" content="">
-    <meta name="description" content="细胞细胞是生命活动的基本单位![[细胞.png]]![[染色质.png]] 细胞质是mRNA转录和翻译的主要场所。scRNA-seq通过提取细胞质中的mRNA来分析细胞的基因表达谱。细胞核是细胞的信息中心，是遗传物质DNA储存与复制的场所，也是RNA转录与加工的场所。 DNA and RNA and 蛋白质脱氧核糖核酸（DNA） 是生物细胞内含有的一种大分子核酸，携带有人体所必需的遗传信息，是染色">
+    <meta name="description" content="细胞细胞是生命活动的基本单位 细胞质是mRNA转录和翻译的主要场所。scRNA-seq通过提取细胞质中的mRNA来分析细胞的基因表达谱。细胞核是细胞的信息中心，是遗传物质DNA储存与复制的场所，也是RNA转录与加工的场所。 DNA and RNA and 蛋白质脱氧核糖核酸（DNA） 是生物细胞内含有的一种大分子核酸，携带有人体所必需的遗传信息，是染色体 的组成部分之一。基因组就是指一个细胞中包含">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单细胞组学入门">
 <meta property="og:url" content="http://example.com/2024/11/23/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="细胞细胞是生命活动的基本单位![[细胞.png]]![[染色质.png]] 细胞质是mRNA转录和翻译的主要场所。scRNA-seq通过提取细胞质中的mRNA来分析细胞的基因表达谱。细胞核是细胞的信息中心，是遗传物质DNA储存与复制的场所，也是RNA转录与加工的场所。 DNA and RNA and 蛋白质脱氧核糖核酸（DNA） 是生物细胞内含有的一种大分子核酸，携带有人体所必需的遗传信息，是染色">
+<meta property="og:description" content="细胞细胞是生命活动的基本单位 细胞质是mRNA转录和翻译的主要场所。scRNA-seq通过提取细胞质中的mRNA来分析细胞的基因表达谱。细胞核是细胞的信息中心，是遗传物质DNA储存与复制的场所，也是RNA转录与加工的场所。 DNA and RNA and 蛋白质脱氧核糖核酸（DNA） 是生物细胞内含有的一种大分子核酸，携带有人体所必需的遗传信息，是染色体 的组成部分之一。基因组就是指一个细胞中包含">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E7%BB%86%E8%83%9E.png">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E6%9F%93%E8%89%B2%E8%B4%A8.png">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99.png">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/FASTQ%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F.png">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/pbmc_fastqs%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/UMI-barcode%E5%9B%BE.png">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E8%A1%A8%E8%BE%BE%E7%9F%A9%E9%98%B5.png">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/GOterm%E5%9F%BA%E5%9B%A0.png">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/GSEA%E5%9F%BA%E5%9B%A0%E9%9B%86%E5%AF%8C%E9%9B%86.png">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E7%BB%86%E8%83%9E%E9%80%9A%E8%AE%AF%E6%96%B9%E5%BC%8F.png">
+<meta property="og:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E5%8F%97%E4%BD%93-%E9%85%8D%E4%BD%93%E6%95%B0%E6%8D%AE%E5%BA%93.png">
 <meta property="article:published_time" content="2024-11-23T08:24:33.006Z">
-<meta property="article:modified_time" content="2024-11-23T10:00:27.456Z">
+<meta property="article:modified_time" content="2024-11-23T11:56:01.791Z">
 <meta property="article:author" content="Charlotte Chew">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E7%BB%86%E8%83%9E.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/favicon.ico">
@@ -285,7 +297,7 @@
 
                 <!-- 文章字数统计 -->
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">5.1k</span>Reading time: <span class="post-count reading-time">18 min</span></span>
+                        <span>Word count: <span class="post-count word-count">5k</span>Reading time: <span class="post-count reading-time">17 min</span></span>
                     </div>
                 <div class="post-intro-meta">
                     <!-- 撰写日期 -->
@@ -442,12 +454,12 @@
             <div class="container container-unloaded">
                 <main class="main post-page">
     <article class="article-entry">
-        <h1 id="细胞"><a href="#细胞" class="headerlink" title="细胞"></a>细胞</h1><p>细胞是生命活动的基本单位<br>![[细胞.png]]<br>![[染色质.png]]</p>
+        <h1 id="细胞"><a href="#细胞" class="headerlink" title="细胞"></a>细胞</h1><p>细胞是生命活动的基本单位<br><img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E7%BB%86%E8%83%9E.png" alt="[细胞.png]" title="细胞"><br><img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E6%9F%93%E8%89%B2%E8%B4%A8.png" alt="[染色质.png]" title="染色质"></p>
 <p>细胞质是mRNA转录和翻译的主要场所。scRNA-seq通过提取细胞质中的mRNA来分析细胞的基因表达谱。<br>细胞核是细胞的信息中心，是遗传物质DNA储存与复制的场所，也是RNA转录与加工的场所。</p>
 <h1 id="DNA-and-RNA-and-蛋白质"><a href="#DNA-and-RNA-and-蛋白质" class="headerlink" title="DNA and RNA and 蛋白质"></a>DNA and RNA and 蛋白质</h1><p><strong>脱氧核糖核酸（DNA）</strong> 是生物细胞内含有的一种大分子核酸，携带有人体所必需的遗传信息，是染色体 的组成部分之一。<br><strong>基因组</strong>就是指一个细胞中包含的所有的DNA，分布于23对(46条)染色体(Chromosome)上。<br><strong>DNA甲基化（DNA methylation）</strong>：DNA化学修饰的一种形式，能够在不改变 DNA序列的前提下，改变遗传表现。<br>稳定性及DNA与蛋白质相互作用方式 的改变，从而控制基因表达。</p>
 <p><strong>核糖核酸（RNA）</strong> 是一种存在于生物细胞以及部分病毒、类病毒中的遗传信息载体，是由核糖核苷酸 通过磷酸二酯键连接而成的长链聚合分子。这种聚合分子在基因的编码、解码、调节和表达中具有多种 生物学作用。<br>➢ 转录组是特定组织或细胞在某一发育阶段或功能状态下转录出来的<strong>所有RNA的总和</strong>，主要包括mRNA 和非编码RNA(non-coding RNA，ncRNA)，是研究细胞表型和功能的一个重要手段。</p>
 <p><strong>蛋白质（protein）</strong> 是由氨基酸以“<strong>脱水缩合</strong>”的方式组成的多肽链经过盘曲折叠形成的具有一定空间结构 的物质。<br><strong>蛋白质组学</strong>是指一种<strong>基因组所表达的全套蛋白质</strong>。蛋白质组研究即在大规模水平上研究蛋白质的特征，包括 蛋白质的表达水平、翻译后的修饰、蛋白与蛋白相互作用等，由此获得蛋白质水平上关于疾病发生、细胞代 谢等过程的整体认识。</p>
-<p><strong>中心法则</strong><br>![[中心法则.png]]</p>
+<p><strong>中心法则</strong><br><img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E4%B8%AD%E5%BF%83%E6%B3%95%E5%88%99.png" alt="[中心法则.png]" title="中心法则"></p>
 <h1 id="单细胞测序技术"><a href="#单细胞测序技术" class="headerlink" title="单细胞测序技术"></a>单细胞测序技术</h1><p>传统基因测序：平均基因表达量。<br>单细胞测序：单个细胞基因表达。单个细胞水平上，对基因组、 转录组等进行测序分析，揭示细胞间的异质性。<br>单细胞转录组测序：在单个细胞水平对mRNA进行高通量测序。</p>
 <p>单细胞测序流程主要包括单细胞分离、单细胞捕获、cDNA扩增和文库制备以及测序分析。</p>
 <h2 id="3-1-单细胞转录组测序："><a href="#3-1-单细胞转录组测序：" class="headerlink" title="3.1 单细胞转录组测序："></a><strong>3.1 单细胞转录组测序：</strong></h2><p>（1）单细胞分离：离体样本保存，配置细胞悬液。将混合的细胞群体分离成单个细胞，高通量方法：微孔技术、液滴微流控技术等。<br>    <strong>液滴技术</strong>：通过水溶液和油相从不同的微通道中流出并融合，形成一个“油包水”的乳液滴。<br>    <strong>微孔芯片技术</strong>：通过制作孔径略大于细胞直径的微孔阵列，通过重力、流体、电场等方式将细胞 悬液中的单细胞分离至微孔中。<br>（2）细胞裂解与逆转录：每个单细胞被裂解，其内的mRNA被逆转录成cDNA。<br>（3）cDNA扩增和文库制备：单细胞转录组测序(scRNA-seq)文库制备的常见步骤主要为三步:<br>    ① 反转录第一条链;<br>    ② 第二条链合成;<br>    ③ cDNA 扩增。 在将RNA转化为第一链cDNA后，得到的cDNA可以通过PCR或体外转录（IVT）进行扩增<br>        由于单细胞中DNA 的含量非常小（约6 pg&#x2F; 细胞），达不到测序仪的检测要求，故在 测序前，必须先对单细胞中的DNA 进行扩增富集。<br>            PCR、MALBAC</p>
@@ -459,11 +471,11 @@
 <h1 id="空间转录组测序技术"><a href="#空间转录组测序技术" class="headerlink" title="空间转录组测序技术"></a>空间转录组测序技术</h1><p>商业化空间组学平台<br>    Imaging-based<br>    Sequencing-based<br>        10X Visum (10X genomics)<br>        Stereo-seq (Complete Genomics)</p>
 <p>空间转录组成像技术：<br>    MERFISH<br>    多重荧光原位杂交技术：可以鉴定单个细胞中数千种RNA的拷贝数和空间定位。<br>空间转录组测序技术：<br>    Spatial transcriptomics<br>    10X Genomics Visium<br>    Slide-seq<br>    Stereo-seq<br>    Spatial-ATAC-seq</p>
 <h1 id="单细胞转录组数据分析"><a href="#单细胞转录组数据分析" class="headerlink" title="单细胞转录组数据分析"></a>单细胞转录组数据分析</h1><p>——<strong>从原始数据到细胞类型注释</strong><br>单细胞转录组数据分析流程 •前处理Pre-processing •质控Quality control •标准化Normalization •特征基因选择Feature selection •降维Dimensionality reduction •聚类Cluster analysis •细胞类型注释Cell type annotation (•数据整合Data integration) •拟时分析Trajectory analysis •差异基因分析 •细胞通讯……</p>
-<p><strong>BCL文件</strong>是<strong>Illumina测序仪</strong>在测序运行过程中生成的原始数据文件。<br>    原始数据格式（FASTQ）<br>    ![[FASTQ文件格式.png]]<br>    以 <code>pbmc_1k_v3_S1_L001_I1_001.fastq.gz</code> 为例：<br>    ![[pbmc_fastqs文件.png]]<br>    - <strong>pbmc_1k_v3</strong>：样本名称，表示该数据是来自PBMC（外周血单个核细胞）的单细胞测序。<br>    - <strong>S1</strong>：表示样本编号，可能是实验中的第1个样本。<br>    - <strong>L001</strong>：表示测序通道（Lane 1），<strong>L002</strong>测序通道（Lane 2）。<br>    - <strong>I1</strong>：表示这是索引序列文件，用于识别样本。<br>    - <strong>R1&#x2F;R2</strong>：表示这是双端测序中的前向（R1）或反向（R2）读段。<br>    - <strong>001</strong>：表示分块编号（如果测序数据太大，可能会进一步拆分为多个文件）</p>
+<p><strong>BCL文件</strong>是<strong>Illumina测序仪</strong>在测序运行过程中生成的原始数据文件。<br>    原始数据格式（FASTQ）<br>    <img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/FASTQ%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F.png" alt="[FASTQ文件格式.png]" title="FASTQ文件格式"><br>    以 <code>pbmc_1k_v3_S1_L001_I1_001.fastq.gz</code> 为例：<br>    <img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/pbmc_fastqs%E6%96%87%E4%BB%B6.png" alt="[pbmc_fastqs文件.png]" title="pbmc_fastqs文件"><br>    - <strong>pbmc_1k_v3</strong>：样本名称，表示该数据是来自PBMC（外周血单个核细胞）的单细胞测序。<br>    - <strong>S1</strong>：表示样本编号，可能是实验中的第1个样本。<br>    - <strong>L001</strong>：表示测序通道（Lane 1），<strong>L002</strong>测序通道（Lane 2）。<br>    - <strong>I1</strong>：表示这是索引序列文件，用于识别样本。<br>    - <strong>R1&#x2F;R2</strong>：表示这是双端测序中的前向（R1）或反向（R2）读段。<br>    - <strong>001</strong>：表示分块编号（如果测序数据太大，可能会进一步拆分为多个文件）</p>
 <p><strong>原始数据处理</strong><br>原始数据处理——质控（FASTQC）<br><code>fastqc -t 8 -o path/fastqc sample1_R1.fq sample1_R2.fq</code><br>原始数据处理——分细胞（UMI-tools）<br>原始数据处理——比对（STAR）<br>    STAR比对结果文件（bam&#x2F;sam）<br>原始数据处理——定量（featurecounts）</p>
 <p>原始数据处理——CellRanger获取表达矩阵<br>    • mkfastq：可直接分析从测序之后扫描剪辑信号的BCL文件，生产每个样本的 FASTQ 文件用于后续分析<br>    • count：获取 FASTQ 文件并执行比对、过滤、barcode和UMI计数，分群和表达差异分析。<br>        barcodes.tsv.gz + features.tsv.gz + matrix.tsv.gz<br>    • aggr：用于多样本的整合<br>    • multi：用于混合样本的分析<br>CellRanger &#x3D; UMI-tools + STAR + featurecounts</p>
-<p>UMI-barcode图判断测序质量和细胞数：<br>急剧下降表明细胞相关条形码和与空 GEM 相关的条形码之间的良好分离<br>![[UMI-barcode图.png]]<br>    UMI计数较高的条形码，通常对应真实细胞（Cell Barcodes）<br>    UMI计数较低的条形码，这些条形码通常对应背景噪声，主要是空GEMs或捕获较少RNA的伪条形码<br>        GEM 是“Gel Bead-in-Emulsion”的缩写，指的是高通量单细胞测序技术（如10x Genomics平台）中的一种核心实验单元</p>
-<p><strong>表达矩阵QC</strong><br>    ![[表达矩阵.png]]<br>    基因数和UMI数<br>        • 低质量的细胞或空滴通常只有很少的基因<br>        • 双细胞或多细胞可能表现出异常高的基因计数<br>        • 一般情况下：删去基因数大于 2500 或少于200 的细胞<br>    去除死细胞<br>        低质量&#x2F;垂死细胞通常表现出较高的线粒体比例<br>        删去线粒体基因计数&gt; 5% 的细胞<br>    双细胞判断（optional）<br>        单细胞或者多细胞的比例随细胞浓度的增加而增加，推荐上机浓度 700-1,200 cells&#x2F;µl （10X）<br>        真正的双细胞单独成簇、有多种细胞marker；不是重要研究对象可以不去除<br>    EmptyDrops识别空液滴（optional）<br>    DropletQC识别空液滴和受损的细胞（optional）<br>    SoupX去除环境RNA（optional）<br>        外周血中（PBMC）常见的是血细胞的污染，一般是HBB之类的基因<br>        在大脑中因为神经元比较多，可能会有兴奋性神经元或抑制性神经元的污染，可能是SLC17A7或GAD1等基因的污染<br>    细胞周期判断（optional）<br>        同一类型的细胞来自不同的细胞周期阶段，可能会对下游的聚类、细胞类型注释产生影响<br>            • 根据细胞周期相关基因进行打分<br>            • 在数据中心化处理时回归细胞周期分数</p>
+<p>UMI-barcode图判断测序质量和细胞数：<br>急剧下降表明细胞相关条形码和与空 GEM 相关的条形码之间的良好分离<br><img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/UMI-barcode%E5%9B%BE.png" alt="[UMI-barcode图.png]" title="UMI-barcode图"><br>    UMI计数较高的条形码，通常对应真实细胞（Cell Barcodes）<br>    UMI计数较低的条形码，这些条形码通常对应背景噪声，主要是空GEMs或捕获较少RNA的伪条形码<br>        GEM 是“Gel Bead-in-Emulsion”的缩写，指的是高通量单细胞测序技术（如10x Genomics平台）中的一种核心实验单元</p>
+<p><strong>表达矩阵QC</strong><br>    <img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E8%A1%A8%E8%BE%BE%E7%9F%A9%E9%98%B5.png" alt="[表达矩阵.png]" title="表达矩阵"><br>    基因数和UMI数<br>        • 低质量的细胞或空滴通常只有很少的基因<br>        • 双细胞或多细胞可能表现出异常高的基因计数<br>        • 一般情况下：删去基因数大于 2500 或少于200 的细胞<br>    去除死细胞<br>        低质量&#x2F;垂死细胞通常表现出较高的线粒体比例<br>        删去线粒体基因计数&gt; 5% 的细胞<br>    双细胞判断（optional）<br>        单细胞或者多细胞的比例随细胞浓度的增加而增加，推荐上机浓度 700-1,200 cells&#x2F;µl （10X）<br>        真正的双细胞单独成簇、有多种细胞marker；不是重要研究对象可以不去除<br>    EmptyDrops识别空液滴（optional）<br>    DropletQC识别空液滴和受损的细胞（optional）<br>    SoupX去除环境RNA（optional）<br>        外周血中（PBMC）常见的是血细胞的污染，一般是HBB之类的基因<br>        在大脑中因为神经元比较多，可能会有兴奋性神经元或抑制性神经元的污染，可能是SLC17A7或GAD1等基因的污染<br>    细胞周期判断（optional）<br>        同一类型的细胞来自不同的细胞周期阶段，可能会对下游的聚类、细胞类型注释产生影响<br>            • 根据细胞周期相关基因进行打分<br>            • 在数据中心化处理时回归细胞周期分数</p>
 <p><strong>表达矩阵标准化（Normalizing）</strong><br>    消除文库大小的差异，从而使不同细胞之间的表达谱的能够比较<br>    确保了在不同细胞群体中观察到的异质性或差异表达都是由生物学而不是技术差异引起的</p>
 <p><strong>特征基因选择（HVGs）</strong><br>    特征基因将用于下游分析，如PCA（2000&#x2F;3000）</p>
 <p><strong>表达矩阵中心化（Scaling）</strong><br>    • 对基因表达量进行处理，目的是消除不同样本中基因表达的平均水平和偏离度的影响，为了后续的分析不受基因 表达的极值影响（改变每个基因的表达，使细胞中的平均表达为0；缩放每个基因的表达，使细胞间的差异为1）<br>    • 默认基于选择的高变基因进行中心化，这样得到的 scale.data 矩阵只有2000个基因</p>
@@ -478,18 +490,18 @@
 <p><a target="_blank" rel="noopener" href="https://www.genome.jp/kegg">（2）KEGG数据库</a><br>KEGG（Kyoto Encyclopedia of Genes and Genomes）是由日本京都大学和东京大学联合开发的数据库，是基因组测序和其他高 通量实验技术生成的大规模分子数据集的整合和解读的参考知识库，可以用来查询代谢途径、酶（或编码酶的基因）、产物等，也可以通过BLAST比对查询未知序列的代谢途径信息。<br>• KEGG是一组人工绘制的代表分子相互作用和反应网络的通路图。<br>• 途径涵盖了广泛的生化过程，可分为7大类：新陈代谢、遗传和环 境信息处理、细胞过程、机体系统、人类疾病和药物开发。</p>
 <p>[（3）Reactome数据库](<a target="_blank" rel="noopener" href="https://reactome.org/">Home - Reactome Pathway Database</a>)<br>• Reactome数据库是一个免费开源的通路数据库，提供直观的生物信息学工具，用于可视化，解释和分析途径相关知识，以支持基础研究，基因组分析，建模，系统生物学研究等。<br>• 该数据库目前覆盖19个物种的通路研究，包括经典的代谢通路、信号转导、基因转录调控、细胞凋亡与疾病。数据库引用了100多个不同的生物信息学资源库，包括NCBI、Ensembl、UniProt、UCSC基因组浏览器、ChEBI小分子数据库和PubMed文献数据库等。</p>
 <p>[（4）MsigDB数据库](<a target="_blank" rel="noopener" href="https://www.gsea-msigdb.org/gsea/msigdb/index.jsp">GSEA | MSigDB</a>)<br>• MSigDB数据库是由Broad Institute研究所的科学家提出GSEA富集方法的同时提供的基因集数据库。<br>• 该数据库从位置、功能、代谢途径和靶标结合等多种角度出发，构建出许多的基因集合。目前包括H和C1-C8这九个系列的基因集，可供下载以及R软件包（<strong>msigdbr</strong>）载入，以用于富集分析。</p>
-<h3 id="8-1-2-基因注释数据库"><a href="#8-1-2-基因注释数据库" class="headerlink" title="8.1.2 基因注释数据库"></a>8.1.2 基因注释数据库</h3><h4 id="（1）GO富集分析"><a href="#（1）GO富集分析" class="headerlink" title="（1）GO富集分析"></a>（1）GO富集分析</h4><p>![[GOterm基因.png]]<br>显著性的计算：利用超几何检验<br>• N为所有Unigene中具有GO注释的基因数目；<br>• n为N中差异表达基因的数目；<br>• M为所有Unigene中注释为某特定GO term的基因数目；<br>• m为注释为某特定GO term的差异表达基因数目。</p>
+<h3 id="8-1-2-基因注释数据库"><a href="#8-1-2-基因注释数据库" class="headerlink" title="8.1.2 基因注释数据库"></a>8.1.2 基因注释数据库</h3><h4 id="（1）GO富集分析"><a href="#（1）GO富集分析" class="headerlink" title="（1）GO富集分析"></a>（1）GO富集分析</h4><p><img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/GOterm%E5%9F%BA%E5%9B%A0.png" alt="[GOterm基因.png]" title="GOterm基因"><br>显著性的计算：利用超几何检验<br>• N为所有Unigene中具有GO注释的基因数目；<br>• n为N中差异表达基因的数目；<br>• M为所有Unigene中注释为某特定GO term的基因数目；<br>• m为注释为某特定GO term的差异表达基因数目。</p>
 <p>GO富集分析的<em>结果解释</em>（cluster3的差异基因的GO富集分析结果）<br>有向无环图（Directed Acyclic Graphs，DAG） 注释系统中每一个节点就代表了一个基本描述单元（term）<br>• 有向指的是term之间的单向指向性关系<br>• 无环指的是从任何一点开始沿着规定的指向都不能回到原点</p>
 <p>• 形状：方形是默认输出的显著性最高的前10个GO term，其他是圆形；<br>• 颜色：颜色越深，代表p值越小，富集越显著；<br>• 文字：图形里面的文字从上而下分别代表<br>    • GO term编号<br>    • GO term的文字描述<br>    • P值<br>    • 前景基因中注释到该term的基因数&#x2F;背景基因中注释到该term的基因数</p>
-<h4 id="（2）GSEA富集分析"><a href="#（2）GSEA富集分析" class="headerlink" title="（2）GSEA富集分析"></a>（2）GSEA富集分析</h4><p>• 先将基因在两种样品中的差异表达程度（如logFC）或者表型相关度进行排序<br>（并不是计算差异基因）<br>• 然后判断来自功能注释等预定义的基因集或自定义的基因集是否倾向于落在有序列表的顶部或底部<br>![[GSEA基因集富集.png]]<br>采用置换检验计算某基因集的显著性<br>GSEA富集分析的<em>结果解释</em>（cluster3的差异基因的GSEA富集分析结果）<br>    GSEA 的结果通常会生成一个 <strong>富集曲线</strong>，表示在排序基因列表中的基因是否集中在特定的基因集上。富集曲线的横轴表示排序基因的排名，纵轴表示富集分数的累计值。曲线的峰值表示基因集在排序列表中的富集区域，峰值越高，表示该基因集的富集程度越高。</p>
+<h4 id="（2）GSEA富集分析"><a href="#（2）GSEA富集分析" class="headerlink" title="（2）GSEA富集分析"></a>（2）GSEA富集分析</h4><p>• 先将基因在两种样品中的差异表达程度（如logFC）或者表型相关度进行排序<br>（并不是计算差异基因）<br>• 然后判断来自功能注释等预定义的基因集或自定义的基因集是否倾向于落在有序列表的顶部或底部<br><img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/GSEA%E5%9F%BA%E5%9B%A0%E9%9B%86%E5%AF%8C%E9%9B%86.png" alt="[GSEA基因集富集.png]" title="GSEA基因集富集"><br>采用置换检验计算某基因集的显著性<br>GSEA富集分析的<em>结果解释</em>（cluster3的差异基因的GSEA富集分析结果）<br>    GSEA 的结果通常会生成一个 <strong>富集曲线</strong>，表示在排序基因列表中的基因是否集中在特定的基因集上。富集曲线的横轴表示排序基因的排名，纵轴表示富集分数的累计值。曲线的峰值表示基因集在排序列表中的富集区域，峰值越高，表示该基因集的富集程度越高。</p>
 <h2 id="8-2-拟时序分析（轨迹分析）"><a href="#8-2-拟时序分析（轨迹分析）" class="headerlink" title="8.2 拟时序分析（轨迹分析）"></a>8.2 拟时序分析（轨迹分析）</h2><pre><code>拟时间序列（Pseudotime）分析，又称细胞轨迹（cell trajectory）分析，是通过构建细胞间的变化轨迹来重 塑细胞随着时间的变化过程。从具体的分类分析和复杂程度来说，可以分为细胞轨迹分析和细胞谱系分析。
 </code></pre>
 <p>细胞轨迹分析<br>    指的是简单模型的细胞变化轨迹分析，通常指的是细胞沿着某个过程有特定化的变化终点，轨迹具有简单树状结构，一端是“根”，另一端是“叶”。<br>细胞谱系分析<br>    通常指的是某类祖源细胞，在特定条件下，有多个发育轨迹和命运，变化过程类似复杂树状分支变化过程。<br>伪时间是一个抽象的分化单位：它只是一个cell到轨迹起点的距离，沿着最短路径测量。轨迹的总长度是由细胞从起始状态移动到结束状态所经历的总转录变化量来定义的。</p>
 <p>Monocle3<br>    输入文件<br>        •表达矩阵<br>        •表型信息<br>        •基因列表<br>    标准化和PCA降维<br>        • preprocess_cds()函数<br>        •相当于Seurat中NormalizeData + ScaleData+ RunPCA<br>    UMAP降维<br>        • reduce_dimension()函数<br>    细胞分区<br>        •cluster_cells()函数<br>    构建细胞轨迹<br>        • learn_graph()识别轨迹<br>        •order_cells()对细胞排序</p>
 <h2 id="8-3-细胞通讯"><a href="#8-3-细胞通讯" class="headerlink" title="8.3 细胞通讯"></a>8.3 细胞通讯</h2><pre><code>细胞通讯(cell communication)：细胞识别与之相接触的细胞或者识别周围环境中存在的各种信号，并将其转化为细胞内信 号进行传递，从而改变细胞内的代谢过程，影响细胞的生长发育，甚至诱导细胞的死亡。
 </code></pre>
-<p>![[细胞通讯方式.png]]</p>
-<p>受体-配体数据库<br>![[受体-配体数据库.png]]<br><a target="_blank" rel="noopener" href="http://www.cellchat.org/">CellChat</a><br>使用流程：[单细胞分析之细胞交互-3：CellChat - 简书](<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/b3d26ac51c5a">https://www.jianshu.com/p/b3d26ac51c5a</a><br><a href="%5BPlantPhoneDB%5D(https://jasonxu.shinyapps.io/PlantPhoneDB/)">PlantPhoneDB</a><br><a href="%5BCITEdb%5D(https://www.citedb.cn/#/)">CITEdb</a><br><a href="%5Bcellphonedb.org%5D(https://www.cellphonedb.org/)">CellPhoneDB</a><br><a target="_blank" rel="noopener" href="https://www.string-db.org/">String</a></p>
+<p><img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E7%BB%86%E8%83%9E%E9%80%9A%E8%AE%AF%E6%96%B9%E5%BC%8F.png" alt="[细胞通讯方式.png]" title="细胞通讯方式"></p>
+<p>受体-配体数据库<br><img src="/public/assets/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8_%E5%9B%BE%E7%89%87/%E5%8F%97%E4%BD%93-%E9%85%8D%E4%BD%93%E6%95%B0%E6%8D%AE%E5%BA%93.png" alt="[受体-配体数据库.png]" title="受体-配体数据库"><br><a target="_blank" rel="noopener" href="http://www.cellchat.org/">CellChat</a><br>使用流程：[单细胞分析之细胞交互-3：CellChat - 简书](<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/b3d26ac51c5a">https://www.jianshu.com/p/b3d26ac51c5a</a><br><a href="%5BPlantPhoneDB%5D(https://jasonxu.shinyapps.io/PlantPhoneDB/)">PlantPhoneDB</a><br><a href="%5BCITEdb%5D(https://www.citedb.cn/#/)">CITEdb</a><br><a href="%5Bcellphonedb.org%5D(https://www.cellphonedb.org/)">CellPhoneDB</a><br><a target="_blank" rel="noopener" href="https://www.string-db.org/">String</a></p>
 <h1 id="单细胞其他组学数据分析"><a href="#单细胞其他组学数据分析" class="headerlink" title="单细胞其他组学数据分析"></a>单细胞其他组学数据分析</h1><p>——<strong>空间转录组、表观组</strong></p>
 
     </article>
@@ -498,7 +510,7 @@
             <p>Author：<a href="http://example.com">Charlotte Chew</a>
             <p>Link：<a href="http://example.com/2024/11/23/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8/">http://example.com/2024/11/23/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8/</a>
             <p>Publish date：<a href="http://example.com/2024/11/23/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8/">November 23rd 2024, 4:24:33 pm</a>
-            <p>Update date：<a href="http://example.com/2024/11/23/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8/">November 23rd 2024, 6:00:27 pm</a>
+            <p>Update date：<a href="http://example.com/2024/11/23/%E5%8D%95%E7%BB%86%E8%83%9E%E7%BB%84%E5%AD%A6%E5%85%A5%E9%97%A8/">November 23rd 2024, 7:56:01 pm</a>
             <p>License：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     <!-- paginator -->
